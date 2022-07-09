@@ -1,0 +1,53 @@
+html {
+   font-size: var(--main-fz);
+}
+
+body {
+   font-family: var(--ff-1);
+   font-size: var(--fz-18);
+   font-weight: var(--fw-400);
+   line-height: 1.5em;
+   color: var(--clr-black-0);
+   letter-spacing: .36px;
+   background-color: var(--clr-white-0);
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: 1fr min-content;
+   align-content: start;
+}
+
+.container {
+   max-width: var(--container);
+   width: min(calc(100% - 30px), 1200px);
+   margin-inline: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: var(--ff-2);
+   line-height: 1.3em;
+   font-weight: var(--fw-400);
+   color: var(--clr-blue-0);
+}
+
+h1 {
+   font-size: var(--fz-60);
+   color: var(--clr-white-0);
+   letter-spacing: 1.2px;
+}
+
+h2 {}
+
+h3 {}
+
+p {
+   line-height: 1.5em;
+}
+
+section {
+
+}

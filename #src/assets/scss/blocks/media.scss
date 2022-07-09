@@ -1,0 +1,64 @@
+@use '../additional/mixins' as *;
+
+@include breakpoint-down(large) {
+
+}
+
+@include breakpoint-down(extra-big) {
+
+}
+
+@include breakpoint-down(big) {
+
+
+   .burger__menu {
+      display: flex;
+   }
+
+   .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      visibility: hidden;
+      background-color: var(--white);
+      transition-duration: 0.25s;
+      padding: 50px 0;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+
+      &__list {
+         flex-direction: column;
+         color: var(--white);
+      }
+
+      &.active {
+         visibility: visible;
+         left: 0;
+      }
+
+      &__link {
+         transition-duration: 0.25s;
+      }
+   }
+}
+
+@include breakpoint-down(medium) {
+
+}
+
+@include breakpoint-down(regular) {
+
+}
+
+@include breakpoint-down(small) {
+
+}
+
+@include breakpoint-down(xsmall) {
+   .btn {
+      max-width: 100%;
+   }
+}
